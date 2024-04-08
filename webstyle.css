@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+
+/* Global Styling */
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 80px 0 0 0;
+    font-family: 'Magra', sans-serif;
+}
+
+h1, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 13px 28px;
+    border-radius: 90px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: all 0.25s ease-out;
+}
+
+button:hover {
+    transform: scale(90%);
+}
+
+/* Navigation Bar */
+
+header {
+    margin: 0px;
+    padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+}
+
+header a img {
+    margin-left: 50px;
+}
+
+.navigation {
+    display: flex;
+    padding: 0;
+    margin: 0 50px 0 0;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.navigation li a {
+    padding: 10px 20px;
+    border-bottom: 2px solid rgba(255, 22, 22, 0);
+    color: #000000;
+    font-weight: 700;
+    transition: all 0.25s ease-out;
+}
+
+.navigation li a:hover {
+    border-bottom: 2px solid rgb(255, 22, 22);
+}
+
+/* Hero Banner */
+
+.hero {
+    padding: 50px 70px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-title {
+    max-width: 500px;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-card {
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+#home {
+    background-image: url("assets/hero.png");
+}
+
+
+#page-not-found {
+    padding: 100px 50px;
+    background-image: url("assets/fries-tv.jpg");
+}
+
+#red-bg {
+    background-color: rgb(255, 22, 22);
+}
+
+/* Button Styling */
+
+.btn-primary {
+    background-color: rgb(255, 22, 22);
+    color: #ffffff;
+}
+
+.btn-secondary {
+    border: 2px solid #000000;
+    background-color: transparent;
+    color: #000000;
+}
+
+.btn-tertiary {
+    border: 2px solid  rgb(255, 22, 22);
+    background-color: transparent;
+    color:  rgb(255, 22, 22);
+}
+
+/* Content Container */
+
+.container {
+    padding: 50px 100px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.container-content a {
+    color:rgb(255, 22, 22);
+    text-decoration: underline;
+}
+
+.container img {
+    max-width: 350px;
+}
+
+/* Card Grid & Elements */
+
+.card-grid-container {
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.card-grid-container a {
+    color:rgb(255, 22, 22);
+    text-decoration: underline;
+}
+
+.card-grid-title {
+    padding: 30px 0px 20px 100px;
+}
+
+.card-grid-paragraph {
+    padding: 0px 100px 10px 100px;
+}
+
+.card-grid-paragraph li {
+    margin-left: 50px;
+}
+
+.card-grid-img {
+    border-radius: 10px;
+}
+
+.card-grid-img img {
+    height: 300px;
+    width: 300px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.card-img {
+    position: relative;
+    height: 250px;
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.card-content button {
+    align-self: flex-end;
+}
+
+.card-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-grid {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+/* Footer */
+
+footer {
+    padding: 60px 50px;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+footer table {
+    table-layout: fixed;
+}
+
+footer table th {
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+footer table td {
+    padding-bottom: 15px;
+}
+
+footer table a {
+    color: #ffffff;
+}
+
+.social-media-container {
+    border-top: 1px solid #7a7a7a;
+    padding-top: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-media-links a img {
+    filter: brightness(0) invert(1);
+}
+
+/* Media */
+
+figure {
+    margin: 20px 100px 20px 100px;
+    display: table;
+    width: 1px;
+}
+
+figcaption {
+    color: #414141;
+}
+
+iframe {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+
+    .container img {
+      display: none;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 670px) {
+    header img {
+        display: none;
+    }
+}
